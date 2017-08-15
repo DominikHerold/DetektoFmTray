@@ -1,4 +1,1 @@
-# KLO
-KLO stands for 'Klo is Lokus Optimisation' // with FART technology (For All Reachable Tray)
-
-It uses the [RaspberryRoomStatus](https://github.com/jbrekle/RaspberryRoomStatus "RaspberryRoomStatus") as BackEnd
+DetektorFmTray is used to show played title of word stream on [detektor.fm](http://detektor.fm"detektor.fm") in tray icon.

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace Klo.Tray
+namespace Detektor.Tray
 {
     static class Program
     {

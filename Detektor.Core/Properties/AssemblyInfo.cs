@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Klo.Core.Tests")]
+[assembly: AssemblyTitle("Detektor.Core")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Klo.Core.Tests")]
+[assembly: AssemblyProduct("Detektor.Core")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("1896e22f-461e-4fd6-a370-11098f7a0dd6")]
+[assembly: Guid("c84cecfe-7ad5-4b03-bc22-3b2b5bde7038")]
 
 // Version information for an assembly consists of the following four values:
 //

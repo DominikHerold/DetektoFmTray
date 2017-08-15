@@ -1,4 +1,4 @@
-﻿namespace Klo.Tray
+﻿namespace Detektor.Tray
 {
     partial class Form1
     {
@@ -33,7 +33,6 @@
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.notifyWhenFreeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -44,13 +43,11 @@
             this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
             this.notifyIcon1.Text = "Fehler";
             this.notifyIcon1.Visible = true;
-            this.notifyIcon1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseClick);
             // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.refreshToolStripMenuItem,
-            this.notifyWhenFreeToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(163, 70);
@@ -61,13 +58,7 @@
             this.refreshToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.refreshToolStripMenuItem.Text = "Refresh";
             this.refreshToolStripMenuItem.Click += new System.EventHandler(this.refreshToolStripMenuItem_Click);
-            // 
-            // notifyWhenFreeToolStripMenuItem
-            // 
-            this.notifyWhenFreeToolStripMenuItem.Name = "notifyWhenFreeToolStripMenuItem";
-            this.notifyWhenFreeToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.notifyWhenFreeToolStripMenuItem.Text = "Notify when free";
-            this.notifyWhenFreeToolStripMenuItem.Click += new System.EventHandler(this.notifyWhenFreeToolStripMenuItem_Click);
+            
             // 
             // exitToolStripMenuItem
             // 
@@ -96,8 +87,6 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem refreshToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem notifyWhenFreeToolStripMenuItem;
-
     }
 }
 

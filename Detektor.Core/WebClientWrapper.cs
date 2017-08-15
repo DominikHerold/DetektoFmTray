@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Net;
 
-namespace Klo.Core
+namespace Detektor.Core
 {
     public interface IWebClientWrapper
     {

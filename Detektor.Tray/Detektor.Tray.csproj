@@ -7,8 +7,8 @@
     <ProjectGuid>{EF1F5FB2-3036-4337-9055-529BC36F3402}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Klo.Tray</RootNamespace>
-    <AssemblyName>Klo.Tray</AssemblyName>
+    <RootNamespace>Detektor.Tray</RootNamespace>
+    <AssemblyName>Detektor.Tray</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -80,26 +80,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Klo.Core\Klo.Core.csproj">
+    <ProjectReference Include="..\Detektor.Core\Detektor.Core.csproj">
       <Project>{7a6c7d10-ec2a-4ffc-96b4-b79579a12129}</Project>
-      <Name>Klo.Core</Name>
+      <Name>Detektor.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="warning.ico">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="trafficlight_green_16.ico">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="trafficlight_red_16.ico">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="spuelung.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
