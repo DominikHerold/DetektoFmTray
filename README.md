@@ -1,1 +1,1 @@
-DetektorFmTray is used to show played title of word stream on [detektor.fm](http://detektor.fm"detektor.fm") in tray icon.
+DetektorFmTray is used to show played title of word stream on [detektor.fm](http://detektor.fm "detektor.fm") in tray icon.
