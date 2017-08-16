@@ -59,5 +59,14 @@ namespace Detektor.Tray.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ERROR.
+        /// </summary>
+        internal static string Form1_notifyIcon1_MouseClick_ERROR {
+            get {
+                return ResourceManager.GetString("Form1_notifyIcon1_MouseClick_ERROR", resourceCulture);
+            }
+        }
     }
 }

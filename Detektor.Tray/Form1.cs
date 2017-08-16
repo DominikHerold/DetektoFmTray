@@ -2,19 +2,15 @@
 using System.Configuration;
 using System.Drawing;
 using System.Text.RegularExpressions;
-using System.Timers;
 using System.Windows.Forms;
 
 using Detektor.Core;
-
-using Timer = System.Timers.Timer;
+using Detektor.Tray.Properties;
 
 namespace Detektor.Tray
 {
     public partial class Form1 : Form
     {
-        private readonly Timer _timer;
-
         private readonly Core.Detektor _detektor;
 
         private readonly Regex _trimmer;
@@ -26,14 +22,14 @@ namespace Detektor.Tray
             InitializeComponent();
             var client = new WebClientWrapper();
             _detektor = new Core.Detektor(client, host);
-
-            _timer = new Timer(5000) { AutoReset = false };
-            _timer.Elapsed += OnTimeEvent;
-            OnTimeEvent(null, null);
+            notifyIcon1.Icon = new Icon("warning.ico");
         }
 
-        private void OnTimeEvent(object sender, ElapsedEventArgs e)
+        private void notifyIcon1_MouseClick(object sender, MouseEventArgs e)
         {
+            if (e.Button != MouseButtons.Left)
+                return;
+
             lock (this)
             {
                 try
@@ -45,17 +41,13 @@ namespace Detektor.Tray
 
                     notifyIcon1.Icon = new Icon("warning.ico");
                     notifyIcon1.Text = content;
+                    notifyIcon1.ShowBalloonTip(10000, string.Empty, content, ToolTipIcon.Info);
                 }
-                finally
+                catch (Exception)
                 {
-                    _timer.Enabled = true;
+                    notifyIcon1.Text = Resources.Form1_notifyIcon1_MouseClick_ERROR;
                 }
             }
-        }
-
-        private void refreshToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            OnTimeEvent(null, null);
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)

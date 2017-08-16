@@ -7,8 +7,6 @@ namespace Detektor.Core
 {
     public interface IDetektor
     {
-        bool? IsInUse();
-
         string GetTitle();
     }
 
@@ -25,18 +23,6 @@ namespace Detektor.Core
             _webClient = webClient;
             _address = address;
             _optionalHeaders = new Dictionary<string, string> { { "Content-Type", "application/xml" } };
-        }
-        
-        public bool? IsInUse()
-        {
-            try
-            {
-                return _webClient.DownloadString(_address, _optionalHeaders).Contains("true");
-            }
-            catch (Exception)
-            {
-                return null;
-            }
         }
 
         public string GetTitle()
