@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Net;
+using System.Text;
 
 namespace Detektor.Core
 {
@@ -17,7 +18,8 @@ namespace Detektor.Core
                 foreach (var header in optionalHeaders)
                     webClient.Headers.Set(header.Key, header.Value);
 
-                return webClient.DownloadString(address);
+                var data = webClient.DownloadData(address);
+                return Encoding.UTF8.GetString(data);
             }
         }
     }
